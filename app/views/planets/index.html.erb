@@ -1,5 +1,13 @@
 <div class="container">
   <h1>The Planets </h1>
+  <ul>
+    <% @planets.each do |planet| %>
+      <li>
+        <%= link_to planet.name, planet_path(planet) %>
+        <%= planet.description %>
+        <hr>
+      </li>
+    <% end %>
+  </ul>
 </div>
 
-<%= Planet.all %>
