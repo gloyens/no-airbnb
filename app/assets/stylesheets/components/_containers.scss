@@ -1,10 +1,7 @@
-// * {
-//   border: 1px solid red;
-// }
-
 .main-container {
-  margin-top: 120px;
+  margin: 120px auto;
   color: white;
+  width: 80%;
 }
 
 .logo-container {
@@ -47,7 +44,29 @@
 
     padding: 10px 20px;
     margin: 8px;
-    background-color: #353a60;
+    background-color: #212442;
     border-radius: 4px;
   }
+
+  a:active, a:hover {
+    background-color: #1a1d3f;
+  }
+
+  .button-primary {
+    background-color: #ff003c;
+    font-size: 21px;
+    font-weight: 800px;
+  }
+
+  .button-primary:active, .button-primary:hover {
+    background-color: #d8004f;
+  }
+
 }
+
+
+// @media only screen and (max-width: 400px) {
+//   .main-container {
+//     width: 80%;
+//   }
+// }
