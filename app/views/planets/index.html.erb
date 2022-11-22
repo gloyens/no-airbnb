@@ -1,13 +1,20 @@
-<div class="container">
-  <h1>The Planets </h1>
+<div class="index-container">
+  <h1>Planets </h1>
   <ul>
     <% @planets.each do |planet| %>
-      <li>
-        <%= link_to planet.name, planet_path(planet) %>
-        <%= planet.description %>
-        <hr>
+      <%= link_to planet_path(planet) do %>
+      <li class="index-card">
+        <%= image_tag "logo-red.png", alt: "planet-image", class: "card-img" %>
+        <h2><%= planet.name %></h2>
+        <div>
+          <%="⭐" * planet.rating %>
+          £ <%= planet.price %>
+        </div>
+        <p><%= planet.description %></p>
       </li>
+      <% end %>
+
+
     <% end %>
   </ul>
 </div>
-
