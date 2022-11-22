@@ -7,7 +7,10 @@ Rails.application.routes.draw do
   # get "/planets/:id", to: "planets#show"
   # get "/planets/new", to: "planets#new"
   # post "planets", to: "planets#create"
-  resources :planets, only: [:index, :show, :new, :create]
+  resources :planets, only: [:index, :show, :new, :create] do
+    resources :bookings, only: [:new, :create]
+  end
+
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
