@@ -56,3 +56,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_22_113422) do
   add_foreign_key "bookings", "users"
   add_foreign_key "planets", "users"
 end
+
