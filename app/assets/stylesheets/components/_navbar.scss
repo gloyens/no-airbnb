@@ -1,14 +1,21 @@
 .navbar-lewagon {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   background: #212442;
   position: fixed;
   bottom: 0;
-  padding: 30px;
+  // padding: 30px;
+  height: 80px;
   width: 100%;
 
   a {
     color: white;
+    margin: 0 20px;
+  }
+
+  a:hover, a:active {
+    color: #ff003c;
   }
 }
 
