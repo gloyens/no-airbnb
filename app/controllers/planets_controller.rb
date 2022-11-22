@@ -1,7 +1,7 @@
 class PlanetsController < ApplicationController
 
   def index
-    @planets = Planet.new
+    @planets = Planet.all
   end
 
   def show
@@ -19,7 +19,7 @@ class PlanetsController < ApplicationController
   end
 
   private
-  
+
   def planet_params
     params.require(:planet).permit(:name, :description, :size, :image_url, :population, :rating, :price)
   end
