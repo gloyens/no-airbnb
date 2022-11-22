@@ -4,6 +4,27 @@
   width: 80%;
 }
 
+.form-container {
+  padding: 50px;
+
+  .button-primary {
+    width: 260px;
+    margin-top: 50px;
+  }
+}
+
+.logo-title-container {
+  padding-bottom: 20px;
+  width: 318px;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 40px;
+  }
+}
+
+
 .logo-container {
   display: flex;
   align-items: center;
