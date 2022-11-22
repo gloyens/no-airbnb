@@ -1,6 +1,6 @@
 .main-container {
   margin: 120px auto;
-  color: white;
+  color: #333333;
   width: 80%;
 }
 
@@ -25,7 +25,7 @@
     text-align: center;
     font-size: 22px;
     font-style: italic;
-    color: #adb4c0;
+    color: #666666;
   }
 }
 
@@ -44,16 +44,18 @@
 
     padding: 10px 20px;
     margin: 8px;
-    background-color: #212442;
+    background-color: #eeeeee; //#212442;
+    color: #333333;
     border-radius: 4px;
   }
 
   a:active, a:hover {
-    background-color: #1a1d3f;
+    background-color: #cccccc;//#1a1d3f;
   }
 
   .button-primary {
     background-color: #ff003c;
+    color: white;
     font-size: 21px;
     font-weight: 800px;
   }
@@ -63,10 +65,3 @@
   }
 
 }
-
-
-// @media only screen and (max-width: 400px) {
-//   .main-container {
-//     width: 80%;
-//   }
-// }

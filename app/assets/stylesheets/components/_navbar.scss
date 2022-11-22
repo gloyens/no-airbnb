@@ -2,20 +2,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #212442;
+  background: white; //#212442;
   position: fixed;
   bottom: 0;
-  // padding: 30px;
   height: 80px;
   width: 100%;
+  border-top: 2px solid #dddddd;
 
   a {
-    color: white;
+    color: #333333;
     margin: 0 20px;
   }
 
   a:hover, a:active {
-    color: #ff003c;
+    color: #555555;
   }
 }
 
