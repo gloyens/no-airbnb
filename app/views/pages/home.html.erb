@@ -1,11 +1,11 @@
 <div class="main-container">
   <div class="logo-container">
-    <%= image_tag "logo-white.png", alt: "Logo" %>
-    <h1>No-AirBnB</h1>
+    <%= image_tag "logo-red.png", alt: "Logo" %>
+    <h1><span style="color: #ff003c">No</span>AirBnB</h1>
     <h2>Planetary vacations for the<br>discerning galactic overlord</h2>
   </div>
   <div class="btn-container">
-    <a href="#" class="button-primary">Explore planets</a>
-    <a href="#">No-AirBnB your Planet</a>
+    <%= link_to "Explore planets", "/planets", class: "button-primary" %>
+    <%= link_to "No-AirBnB your Planet", "/planets/new" %>
   </div>
 </div>
