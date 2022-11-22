@@ -1,7 +1,11 @@
-  <h2> <%= @planet.name %></h2>
-  <%# <img src= @planet.image_url alt="planetpic"> %>
+<div class="show-container">
+  <%= image_tag "planet.jpg", alt: "planet-image", class: "show-img" %>
+
+   <h1> <%= @planet.name %></h1>
+
   <p><%= @planet.description %></p>
   <p><%= @planet.size %></p>
   <p><%= @planet.population %></p>
   <p><%= @planet.rating %></p>
   <p><%= @planet.price %></p>
+</div>
