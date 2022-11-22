@@ -13,7 +13,7 @@ class PlanetsController < ApplicationController
   end
 
   def create
-    @planet=Planet.new(planet_params)
+    @planet = Planet.new(planet_params)
     @planet.save
     redirect_to planet_path(@planet)
   end

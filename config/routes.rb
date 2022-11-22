@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
-
-  devise_for :users
-
   root to: "pages#home"
-  get "/planets", to: "planet#index"
-  get "/planets/:id", to: "planet#show"
-  get "/planets/new", to: "planet#new"
-  post "planets", to: "planet#create"
+  devise_for :users
+  get "/planets", to: "planets#index"
+  get "/planets/:id", to: "planets#show"
+  get "/planets/new", to: "planets#new"
+  post "planets", to: "planets#create"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
