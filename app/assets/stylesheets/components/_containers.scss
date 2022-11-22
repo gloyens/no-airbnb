@@ -4,6 +4,7 @@
   width: 80%;
 }
 
+
 .form-container {
   padding: 50px;
 
@@ -24,6 +25,23 @@
   }
 }
 
+.index-container {
+  padding: 20px;
+
+  h1 {
+    font-size: 44px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    padding: 0;
+  }
+}
 
 .logo-container {
   display: flex;
