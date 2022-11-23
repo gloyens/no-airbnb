@@ -27,7 +27,10 @@
 <%# Now lets do the image %>
 <div class = "container">
   <div class="container-top-btn">
-    <div class="fa-solid fa-chevron-left button-round"></div>
+    <div>
+    <%= link_to "/planets" do %>
+        <i class="fa-solid fa-chevron-left button-round"></i>
+      <% end %></div>
   </div>
     <%= image_tag "pexels.jpg", alt: "planet-image", class: "show-img" %>
 </div>
