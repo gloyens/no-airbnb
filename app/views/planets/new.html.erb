@@ -10,8 +10,7 @@
     <%= f.input :description %>
     <%= f.input :price %>
     <%= f.input :image_url %>
-    <%= f.input :rating %>
-
+    <%= f.input :rating, collection: 1..5 %>
     <div class="form-actions btn-container">
       <%= f.button :submit, "Create Planet", class: "button-primary" %>
     </div>
