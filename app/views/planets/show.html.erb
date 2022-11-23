@@ -18,8 +18,6 @@
 </div>
 
   <% @planet.bookings.each do |booking|%>
-    <p><%= booking.date_start %></p>
-    <p><%= booking.date_end %></p>
-    <p><%= booking.comment %></p>
+    <p><%= booking.date_start %> - <%= booking.date_end %> - <%= booking.comment %></p>
   <% end%>
 </div>
