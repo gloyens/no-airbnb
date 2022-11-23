@@ -1,9 +1,17 @@
+<div class="new-booking form-container">
+  <div class="logo-title-container">
+  <h1>Create Booking</h1>
+    <div class="icon-container">
+      <%= image_tag "logo-red.png", alt: "Logo" %>
+    </div>
+  </div>
 
-
-<%= simple_form_for(@booking, url: planet_bookings_path) do |f| %>
-  <%= f.input :date_start %>
-  <%= f.input :date_end%>
-  <%= f.input :comment %>
-  <%= f.button :submit %>
-<% end %>
-
+  <%= simple_form_for(@booking, url: planet_bookings_path) do |f| %>
+    <%= f.input :date_start %>
+    <%= f.input :date_end%>
+    <%= f.input :comment %>
+      <div class="form-actions btn-container">
+        <%= f.button :submit, "create booking", class: "button-primary" %>
+      </div>
+  <% end %>
+</div>
