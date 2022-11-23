@@ -16,13 +16,16 @@
     <%= yield %>
 
     <div class="navbar-lewagon">
+      <%= link_to "/" do %>
+        <i class="fa-2x fa-solid fa-house"></i>
+      <% end %>
       <%= link_to "/planets" do %>
         <i class="fa-2x fa-solid fa-earth-americas"></i>
       <% end %>
       <%= link_to "/planets/new" do %>
         <i class="fa-2x fa-solid fa-square-plus"></i>
       <% end %>
-      <%= link_to "/users" do %>
+      <%= link_to "/users/edit" do %>
         <i class="fa-2x fa-solid fa-user"></i>
       <% end %>
     </div>

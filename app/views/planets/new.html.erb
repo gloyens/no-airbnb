@@ -1,12 +1,19 @@
-<div class="new-planet">
+<div class="new-planet form-container">
+  <div class="logo-title-container">
   <h1>New Planet</h1>
+    <div class="icon-container">
+      <%= image_tag "logo-red.png", alt: "Logo" %>
+    </div>
+  </div>
   <%= simple_form_for(@planet) do |f| %>
     <%= f.input :name %>
     <%= f.input :description %>
     <%= f.input :price %>
     <%= f.input :image_url %>
-    <%= f.input :rating %>
-    <%= f.submit %>
+    <%= f.input :rating, collection: 1..5 %>
+    <div class="form-actions btn-container">
+      <%= f.button :submit, "Create Planet", class: "button-primary" %>
+    </div>
   <% end %>
 
 </div>

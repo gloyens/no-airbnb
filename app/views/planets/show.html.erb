@@ -64,15 +64,12 @@
 <p>🪙<%= @planet.price %></p>
 </div>
 
-
-
-
-
-
-
-
-
-
-
+  <div class="btn-container">
+    <%= link_to "Book now", new_planet_booking_path(@planet), class: "button-primary" %>
   </div>
+</div>
+
+  <% @planet.bookings.each do |booking|%>
+    <p><%= booking.date_start %> - <%= booking.date_end %> - <%= booking.comment %></p>
+  <% end%>
 </div>
