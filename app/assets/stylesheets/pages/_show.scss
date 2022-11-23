@@ -1,7 +1,6 @@
 
 h1 {
-  color: #000000;
-  font-size: 100px;
+  color: #333333;
   font-weight: 900;
 }
 
@@ -9,6 +8,11 @@ h1 {
   width: 100%;
   border-radius: 7%;
   border: 5px solid #ff003C;
+}
+
+.booking-list {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .container-description {

@@ -8,7 +8,7 @@
   padding: 20px;
 
   h1 {
-    font-size: 50px;
+    font-size: 44px;
     text-align: center;
     padding: 3px;
   }
@@ -104,7 +104,17 @@
     background-color: #cccccc;//#1a1d3f;
   }
 
+  .button-primary {
+    background-color: #ff003c;
+    color: white;
+    font-size: 21px;
+    font-weight: 800px;
+    border-radius: 5px;
+  }
 
+  .button-primary:active, .button-primary:hover {
+    background-color: #d8004f;
+  }
 }
 
 

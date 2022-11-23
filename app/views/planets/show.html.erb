@@ -35,7 +35,7 @@
 <div class = "container-description">
   <div class = "title">
     <h2>Description</h2>
-    <h3><%="⭑" * @planet.rating %></h3>
+    <h3><%="⭐" * @planet.rating %></h3>
   </div>
   <div class= "content">
     <p><%= @planet.description * 8%></p>
@@ -67,9 +67,12 @@
   <div class="btn-container">
     <%= link_to "Book now", new_planet_booking_path(@planet), class: "button-primary" %>
   </div>
+
+  <div class="booking-list">
+    <% @planet.bookings.each do |booking|%>
+      <p><%= booking.comment %>: <%= booking.date_start %> - <%= booking.date_end %></p>
+    <% end%>
+  </div>
 </div>
 
-  <% @planet.bookings.each do |booking|%>
-    <p><%= booking.date_start %> - <%= booking.date_end %> - <%= booking.comment %></p>
-  <% end%>
 </div>
