@@ -8,4 +8,15 @@
   <p><%= @planet.population %></p>
   <p><%= @planet.rating %></p>
   <p><%= @planet.price %></p>
+
+  <div class="btn-container">
+    <%= link_to "Book now", new_planet_booking_path(@planet), class: "button-primary" %>
+  </div>
+</div>
+
+  <% @planet.bookings.each do |booking|%>
+    <p><%= booking.date_start %></p>
+    <p><%= booking.date_end %></p>
+    <p><%= booking.comment %></p>
+  <% end%>
 </div>
