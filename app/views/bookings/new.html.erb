@@ -1,1 +1,9 @@
-<p>This is a new booking</p>
+
+
+<%= simple_form_for(@booking, url: planet_bookings_path) do |f| %>
+  <%= f.input :date_start %>
+  <%= f.input :date_end%>
+  <%= f.input :comment %>
+  <%= f.button :submit %>
+<% end %>
+
