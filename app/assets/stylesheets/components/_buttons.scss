@@ -3,26 +3,24 @@
   color: white;
   font-size: 21px;
   font-weight: 800px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .button-primary:active, .button-primary:hover {
   background-color: #d8004f;
 }
 
-
-
 .button-round {
-  background-color: #fafafa;
-  padding: 1rem;
-  border-radius: 15%;
+  background-color: #eeeeee;
+  padding: 10px 15px;
+  border-radius: 5px;
   position: absolute;
-  margin: 1rem;
+  margin: 10px;
 }
 
 .button-primary-back {
   text-decoration: none;
-  color: white;
+  color: #333333;
   background-color: #eeeeee;
   font-size: 21px;
   font-weight: 800px;
