@@ -14,13 +14,18 @@ class PlanetsController < ApplicationController
 
   def create
     @planet = Planet.new(planet_params)
-    @planet.save
-    redirect_to planet_path(@planet)
+    @planet.user = current_user
+    if @planet.save
+      redirect_to planets_path
+    else
+      raise
+      render :new
+    end
   end
 
   private
 
   def planet_params
-    params.require(:planet).permit(:name, :description, :size, :image_url, :population, :rating, :price)
+    params.require(:planet).permit(:name, :description, :image_url, :population, :rating, :price)
   end
 end
