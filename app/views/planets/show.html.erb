@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
   </head>
 <%# Now we need the top banner, title and symbol %>
 
@@ -26,18 +26,53 @@
     <!-- /navbar -->
 <%# Now lets do the image %>
 <div class = "container">
-  <div class="image-container">
-    <%= image_tag "planet.jpg", alt: "planet-image", class: "image-head" %>
+  <div class="container-top-btn">
+    <div class="fa-solid fa-chevron-left button-round"></div>
   </div>
+    <%= image_tag "pexels.jpg", alt: "planet-image", class: "show-img" %>
+</div>
+
+<div class = "container-description">
+  <div class = "title">
+    <h2>Description</h2>
+    <h3><%="⭑" * @planet.rating %></h3>
+  </div>
+  <div class= "content">
+    <p><%= @planet.description * 8%></p>
+  </div>
+    <hr>
+</div>
+<div class = "container-offers">
+  <div class = "title">
+    <h3>What this planet offers</h3>
+  </div>
+<div class="icons">
+  <div class = "pop">
+    <i class="fa-solid fa-people-group"></i>
+    <p><%= @planet.population %> people</p>
+  </div>
+  <div class = "size">
+      <i class="fa-solid fa-ruler-horizontal"></i>
+      <p><%= @planet.size %> km</p>
+  </div>
+</div>
+<hr>
+<div class = "container-price">
+  <div class = "title">
+    <h3>Price per night</h3>
+  </div>
+<p>🪙<%= @planet.price %></p>
 </div>
 
 
-    <h1> <%= @planet.name %></h1>
 
-    <p><%= @planet.description %></p>
-    <p><%= @planet.size %></p>
-    <p><%= @planet.population %></p>
-    <p><%= @planet.rating %></p>
-    <p><%= @planet.price %></p>
+
+
+
+
+
+
+
+
   </div>
 </div>

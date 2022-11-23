@@ -7,4 +7,47 @@ h1 {
 
 .show-img {
   width: 100%;
+  border-radius: 7%;
+  border: 5px solid #ff003C;
+}
+
+.container-description {
+  padding: 10px;
+
+  p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  h3 {
+    font-size: 25;
+  }
+}
+.title {
+  padding: 5px;
+  h2 {
+    font-size: 30px;
+    color:#ff003C;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 20px;
+    color:#000000;
+    font-weight: bold;
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    display: inline;
+  }
+}
+
+.container-offers {
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
