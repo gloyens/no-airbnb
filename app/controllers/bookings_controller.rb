@@ -12,7 +12,6 @@ class BookingsController < ApplicationController
     if @booking.save
       redirect_to planet_path(@booking.planet)
     else
-      raise
       render :new
     end
   end
