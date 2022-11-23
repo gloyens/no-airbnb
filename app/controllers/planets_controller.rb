@@ -18,7 +18,6 @@ class PlanetsController < ApplicationController
     if @planet.save
       redirect_to planets_path
     else
-      raise
       render :new
     end
   end
