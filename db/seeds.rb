@@ -22,7 +22,7 @@ password: "password"
     name: Faker::Space.star_cluster,
     description: Faker::Fantasy::Tolkien.poem,
     size: Faker::Space.distance_measurement,
-    image_url: Faker::LoremFlickr.image(size: "300x300", search_terms: ['planet']),
+    image_url: Faker::LoremFlickr.unique.image(size: "300x300", search_terms: ['planet']),
     population: Faker::Number.between(from: 1, to: 100000000),
     price: Faker::Commerce.price(range: 0..100000.0, as_string: true),
     rating: Faker::Number.between(from: 1, to: 5),

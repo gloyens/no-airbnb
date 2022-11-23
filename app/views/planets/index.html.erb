@@ -4,8 +4,8 @@
     <% @planets.each do |planet| %>
       <%= link_to planet_path(planet) do %>
       <li class="index-card">
-        <%= image_tag "logo-red.png", alt: "planet-image", class: "card-img" %>
-        <%# <%= image_tag rand(1..10).to_s + ".jpg", alt: "planet-image", class: "card-img" %>
+        <!-- image_tag "logo-red.png", alt: "planet-image", class: "card-img" %> -->
+        <%= image_tag planet.image_url, alt: "planet-image", class: "card-img" %>
         <h2><%= planet.name %></h2>
         <div>
           <%="⭐" * planet.rating %>
