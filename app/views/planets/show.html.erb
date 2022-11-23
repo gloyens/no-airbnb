@@ -1,7 +1,10 @@
-<div class="show-container">
+<div class="show-page container">
+  <div class="container-top-btn">
+    <div class="fa-solid fa-chevron-left button-round"></div>
+  </div>
   <%= image_tag "planet.jpg", alt: "planet-image", class: "show-img" %>
 
-   <h1> <%= @planet.name %></h1>
+  <div class="show-container">
 
   <p><%= @planet.description %></p>
   <p><%= @planet.size %></p>
