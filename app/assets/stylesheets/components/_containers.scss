@@ -17,6 +17,7 @@
 
 .form-container {
   padding: 50px;
+  padding-bottom: 120px;
 
   .button-primary {
     width: 260px;
@@ -126,7 +127,8 @@
 
 .info-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 
   .title-container {
     display: flex;
@@ -137,6 +139,7 @@
   .rating-price-container {
     display: flex;
     justify-content: space-between;
+    width: 90%;
     margin: 0 15px;
     padding: 0 15px;
   }
