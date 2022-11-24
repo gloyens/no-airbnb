@@ -1,4 +1,4 @@
-<div class = "container">
+<div>
   <div class="container-top-btn">
         <div>
     <%= link_to "/planets" do %>
@@ -8,24 +8,25 @@
   <img src="<%= @planet.image_url %>", alt="planet-image", class="show-img">
 </div>
 
-<div>
-
-
-
-  <div class="info-container">
-    <div class="title-container">
-      <h1> <%= @planet.name %></h1>
-    </div>
+<div class="info-container">
+  <div class="title-container">
+    <h1> <%= @planet.name %></h1>
+  </div>
+  <div class="rating-price-container">
     <h3><%="⭐" * @planet.rating %></h3>
     <p>£ <%= @planet.price %></p>
   </div>
-
-  <div>
-    <p><%= @planet.description%></p>
-  </div>
-    <hr>
 </div>
+
+
+
+
 <div class="container-offers">
+  <div>
+    <hr>
+      <p><%= @planet.description%></p>
+    <hr>
+  </div>
   <div class = "title">
     <h3>What this planet offers</h3>
   </div>

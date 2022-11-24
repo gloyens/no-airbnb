@@ -5,11 +5,11 @@
 }
 
 .title-container {
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 
   h1 {
     font-size: 44px;
-    text-align: center;
+    text-align: left;
     padding: 3px;
   }
 
@@ -41,8 +41,6 @@
 
   h1 {
     font-size: 44px;
-    text-align: center;
-    padding: 30px;
   }
 
   a {
@@ -130,6 +128,18 @@
   display: flex;
   align-items: center;
 
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+  }
+
+  .rating-price-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    padding: 0 15px;
+  }
 }
 
 .justify-container {
