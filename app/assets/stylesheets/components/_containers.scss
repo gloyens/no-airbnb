@@ -1,6 +1,6 @@
 .main-container {
   margin: 120px auto;
-  color: #333333;
+  color: white;
   width: 80%;
 }
 
@@ -70,13 +70,14 @@
     font-size: 44px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
   }
 
   h2 {
     text-align: center;
     font-size: 22px;
     font-style: italic;
-    color: #666666;
+    color: $light-gray;
   }
 }
 
@@ -95,17 +96,16 @@
 
     padding: 10px 20px;
     margin: 8px;
-    background-color: #eeeeee; //#212442;
-    color: #333333;
+    background-color: $gray; //#212442;
     border-radius: 4px;
   }
 
   a:active, a:hover {
-    background-color: #cccccc;//#1a1d3f;
+    background-color: #444444;
   }
 
   .button-primary {
-    background-color: #ff003c;
+    background-color: $blue;
     color: white;
     font-size: 21px;
     font-weight: 800px;
@@ -113,7 +113,7 @@
   }
 
   .button-primary:active, .button-primary:hover {
-    background-color: #d8004f;
+    background-color: #7a0ce2;
   }
 }
 
