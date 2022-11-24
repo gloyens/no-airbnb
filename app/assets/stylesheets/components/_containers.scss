@@ -120,7 +120,12 @@
 .info-container {
   display: flex;
   align-items: center;
-  
+
+}
+
+.justify-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 // .show-container {
