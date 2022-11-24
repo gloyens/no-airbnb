@@ -8,9 +8,9 @@
     placeholder: "Find a planet"
   %>
   <%= submit_tag "Search", class: "btn btn-primary" %>
-<% end %>
-    </div>
-  <h1>Planets </h1>
+  <% end %>
+  </div>
+  <%# <h1>Planets </h1> %>
   <ul>
     <% @planets.each do |planet| %>
       <%= link_to planet_path(planet) do %>
