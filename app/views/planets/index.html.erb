@@ -1,4 +1,15 @@
+
 <div class="index-container">
+  <div class="index-search">
+  <%= form_with url: planets_path, method: :get, class: "d-flex" do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a planet"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
+    </div>
   <h1>Planets </h1>
   <ul>
     <% @planets.each do |planet| %>
