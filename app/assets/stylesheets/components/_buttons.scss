@@ -12,19 +12,23 @@
 
 .button-round {
   background-color: #eeeeee;
-  padding: 10px 15px;
-  border-radius: 5px;
+  padding: 15px 15px;
+  border-radius: 50px;
   position: absolute;
   margin: 10px;
 }
 
+.button-round:hover {
+  background-color: #878484;
+}
+
 .button-primary-back {
   text-decoration: none;
-  color: #333333;
-  background-color: #eeeeee;
+  color: black;
+  background-color:white;
   font-size: 21px;
   font-weight: 800px;
-  border-radius: 5px;
+  border-radius: 50px;
   padding: 10px 15px;
 }
 
