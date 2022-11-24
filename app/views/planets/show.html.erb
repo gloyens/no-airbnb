@@ -51,9 +51,12 @@
     <%= link_to "Book now", new_planet_booking_path(@planet), class: "button-primary" %>
   </div>
 
+
+  <h2>Where you've been</h2>
+
   <div class="booking-list">
     <% @planet.bookings.each do |booking|%>
-      <p><%= booking.comment %>: <%= booking.date_start %> - <%= booking.date_end %></p>
+      <p><%= booking.comment %>: <%= booking.date_start.strftime("%A, %b %d") %> - <%= booking.date_end.strftime("%A, %b %d") %></p>
     <% end%>
   </div>
 </div>

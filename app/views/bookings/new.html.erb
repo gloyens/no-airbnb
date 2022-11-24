@@ -7,8 +7,8 @@
   </div>
 
   <%= simple_form_for(@booking, url: planet_bookings_path) do |f| %>
-    <%= f.input :date_start %>
-    <%= f.input :date_end%>
+    <%= f.input :date_start, as: :date, html5: true  %>
+    <%= f.input :date_end, as: :date, html5: true %>
     <%= f.input :comment %>
       <div class="form-actions btn-container">
         <%= f.button :submit, "create booking", class: "button-primary" %>
