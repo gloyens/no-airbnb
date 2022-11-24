@@ -115,6 +115,15 @@
   .button-primary:active, .button-primary:hover {
     background-color: #7a0ce2;
   }
+
+  .button-delete
+  {
+    background-color:$gray;
+    color: white;
+    font-size: 21px;
+    font-weight: 800px;
+    border-radius: 5px;
+  }
 }
 
 .info-container {
