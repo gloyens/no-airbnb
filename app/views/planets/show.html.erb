@@ -1,10 +1,3 @@
-    <!-- navbar -->
-    <%# now we do the pic %>
-              <!-- Now we do the title -->
-
-
-    <!-- /navbar -->
-<%# Now lets do the image %>
 <div class = "container">
   <div class="container-top-btn">
         <div>
@@ -15,11 +8,11 @@
   <%= image_tag "pexels.jpg", alt: "planet-image", class: "show-img" %>
 </div>
 
-<div class = "container-description">
+<div>
 
 
 
-  <div class = "info-container">
+  <div class="info-container">
     <div class="title-container">
       <h1> <%= @planet.name %></h1>
     </div>
@@ -27,12 +20,12 @@
     <p>£ <%= @planet.price %></p>
   </div>
 
-  <div class="content">
+  <div>
     <p><%= @planet.description%></p>
   </div>
     <hr>
 </div>
-<div class = "container-offers">
+<div class="container-offers">
   <div class = "title">
     <h3>What this planet offers</h3>
   </div>
@@ -48,7 +41,7 @@
 </div>
 <hr>
 <div class = "container-price">
-  <div class = "title">
+  <div class="title">
     <h3>Price per night</h3>
   </div>
   <p>£ <%= @planet.price %></p>
