@@ -52,9 +52,12 @@
     <%= link_to "Book now", new_planet_booking_path(@planet), class: "button-primary" %>
   </div>
 
+  <div class="btn-container">
+    <%= link_to "Delete Planet", planet_path(@planet), data: { 'turbo-method': :delete, 'turbo-confirm': 'Are you sure?'}, class: "button-delete" %>
+  </div>
   <br>
 
-  <h2>Where you've been</h2>
+  <h2>Your bookings</h2>
 
   <div class="booking-list">
     <% @planet.bookings.each do |booking|%>
@@ -62,9 +65,6 @@
     <% end%>
   </div>
 
-  <div class="btn-container">
-    <%= link_to "Delete Planet", planet_path(@planet), data: { 'turbo-method': :delete, 'turbo-confirm': 'Are you sure?'}, class: "button-delete" %>
-  </div>
 </div>
 
 </div>
