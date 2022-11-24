@@ -52,5 +52,13 @@ h1 {
 }
 
 .container-offers {
-  padding: 0px 30px 80px 30px;
+  padding: 0px 30px 15px 30px;
+}
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    text-align: center;
+  }
 }
