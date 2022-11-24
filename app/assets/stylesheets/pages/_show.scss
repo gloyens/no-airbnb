@@ -6,13 +6,7 @@ h1 {
 
 .show-img {
   width: 100%;
-  border-color: white;
-  border-bottom: 1px;
-}
-
-.booking-list {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent 0%, transparent 75%, rgba(0,0,0,0.4));
 }
 
 .container-description {
@@ -52,5 +46,5 @@ h1 {
 }
 
 .container-offers {
-  padding: 0px 30px 80px 30px;
+  padding: 0px 30px 120px 30px;
 }
