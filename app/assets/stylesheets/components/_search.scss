@@ -1,3 +1,19 @@
 .index-search {
+  font-size: 26px;
+  padding: 20px;
+  padding-bottom: 0;
 
+  .form-control {
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+    background-color: $gray;
+    border: none;
+  }
+
+  .btn {
+    width: 60px;
+    border-radius: 0 5px 5px 0;
+    background-color: #555555;
+    border: none;
+  }
 }
