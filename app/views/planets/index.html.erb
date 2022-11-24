@@ -1,17 +1,30 @@
+
 <div class="index-container">
-  <h1>Planets </h1>
+  <div class="index-search">
+  <%= form_with url: planets_path, method: :get, class: "d-flex" do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a planet"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+  <% end %>
+  </div>
+  <%# <h1>Planets </h1> %>
   <ul>
     <% @planets.each do |planet| %>
       <%= link_to planet_path(planet) do %>
       <li class="index-card">
         <!-- image_tag "logo-red.png", alt: "planet-image", class: "card-img" %> -->
         <%= image_tag planet.image_url, alt: "planet-image", class: "card-img" %>
-        <h2><%= planet.name %></h2>
-        <div>
-          <%="⭐" * planet.rating %>
-          £ <%= planet.price %>
+        <div class="card-info">
+          <h2><%= planet.name %></h2>
+          <div class="justify-container">
+            <p><%="⭐" * planet.rating %></p>
+            <h4>£ <%= planet.price %></h4>
+          </div>
+          <p><%= planet.description %></p>
         </div>
-        <p><%= planet.description %></p>
       </li>
       <% end %>
 

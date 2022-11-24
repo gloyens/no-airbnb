@@ -2,6 +2,11 @@ class PlanetsController < ApplicationController
 
   def index
     @planets = Planet.all
+    if params[:query].present?
+      @planets = Planet.search_by_name_and_description(params[:query])
+    else
+      @planets = Planet.all
+    end
   end
 
   def show
@@ -20,6 +25,12 @@ class PlanetsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @planet = Planet.find(params[:id])
+    @planet.destroy
+    redirect_to planets_path
   end
 
   private

@@ -1,5 +1,5 @@
 .button-primary {
-  background-color: #ff003c;
+  background-color: $blue;
   color: white;
   font-size: 21px;
   font-weight: 800px;
@@ -7,7 +7,7 @@
 }
 
 .button-primary:active, .button-primary:hover {
-  background-color: #d8004f;
+  background-color: #7a0ce2;
 }
 
 .button-round {
