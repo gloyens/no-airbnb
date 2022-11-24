@@ -1,14 +1,8 @@
     <!-- navbar -->
     <%# now we do the pic %>
-    <div class="header-container d-flex align-items-center">
-     <div class="image-container">
-         <%= image_tag "logo-red.png", style:"width:80px", alt: "logo-image"  %>
-      </div>
               <!-- Now we do the title -->
-      <div class="title-container">
-        <h1> <%= @planet.name %></h1>
-      </div>
-    </div>
+
+
     <!-- /navbar -->
 <%# Now lets do the image %>
 <div class = "container">
@@ -18,14 +12,21 @@
         <i class="fa-solid fa-chevron-left button-round"></i>
       <% end %></div>
   </div>
-    <%= image_tag "pexels.jpg", alt: "planet-image", class: "show-img" %>
+  <%= image_tag "pexels.jpg", alt: "planet-image", class: "show-img" %>
 </div>
 
 <div class = "container-description">
-  <div class = "title">
-    <h2>Description</h2>
+
+
+
+  <div class = "info-container">
+    <div class="title-container">
+      <h1> <%= @planet.name %></h1>
+    </div>
     <h3><%="⭐" * @planet.rating %></h3>
+    <p>£ <%= @planet.price %></p>
   </div>
+
   <div class="content">
     <p><%= @planet.description%></p>
   </div>
@@ -42,7 +43,7 @@
   </div>
   <div class = "size">
       <i class="fa-solid fa-ruler-horizontal"></i>
-      <p><%= @planet.size %> km</p>
+      <p><%= @planet.size %> km/diameter</p>
   </div>
 </div>
 <hr>
@@ -50,7 +51,7 @@
   <div class = "title">
     <h3>Price per night</h3>
   </div>
-  <p>🪙<%= @planet.price %></p>
+  <p>£ <%= @planet.price %></p>
 </div>
 
   <div class="btn-container">
