@@ -13,8 +13,8 @@
   </head>
 
   <body>
-  <div class="notice"><%= notice %></div>
-  <!-- <p class="alert"><%= alert %></p> -->
+  <!--div class="alert"><%= notice %></div>
+  <p class="alert"><%= alert %></p> -->
     <%= yield %>
 
     <div class="navbar-lewagon">
@@ -33,3 +33,11 @@
     </div>
   </body>
 </html>
+
+<script>
+  function hideLoadingDiv() {
+    setTimeout(function(){
+      document.getElementById('add-planet').classList.add('notice-hidden');
+    },1000)
+  }
+</script>
