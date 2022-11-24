@@ -48,6 +48,17 @@
   <p>£ <%= @planet.price %></p>
 </div>
 
+  <div class="booking-container">
+    <h2>Your Bookings</h2>
+   <hr>
+    <div class="booking-list">
+      <% @planet.bookings.each do |booking|%>
+        <p><%= booking.comment %>: <%= booking.date_start.strftime("%A, %b %d") %> - <%= booking.date_end.strftime("%A, %b %d") %></p>
+      <% end%>
+    </div>
+   <hr>
+  </div>
+
   <div class="btn-container">
     <%= link_to "Book now", new_planet_booking_path(@planet), class: "button-primary" %>
   </div>
@@ -55,16 +66,6 @@
   <div class="btn-container">
     <%= link_to "Delete Planet", planet_path(@planet), data: { 'turbo-method': :delete, 'turbo-confirm': 'Are you sure?'}, class: "button-delete" %>
   </div>
-  <br>
-
-  <h2>Your bookings</h2>
-
-  <div class="booking-list">
-    <% @planet.bookings.each do |booking|%>
-      <p><%= booking.comment %>: <%= booking.date_start.strftime("%A, %b %d") %> - <%= booking.date_end.strftime("%A, %b %d") %></p>
-    <% end%>
-  </div>
-
 </div>
 
 </div>
