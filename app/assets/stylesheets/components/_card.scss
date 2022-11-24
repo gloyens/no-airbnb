@@ -1,10 +1,11 @@
 .index-card {
   list-style: none;
-  color: #333333;
+  color: white;
+  background-color: $gray;
   margin: 5%;
   padding: 20px;
-  // border: 2px solid #dddddd;
-  box-shadow: 0 2px 12px rgba($color: #000000, $alpha: 0.1);
+  // border: 2px solid $gray;
+  // box-shadow: 0 2px 12px rgba($color: #000000, $alpha: 0.1);
   border-radius: 8px;
 
   h2 {

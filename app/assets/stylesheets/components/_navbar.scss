@@ -2,21 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white; //#212442;
+  background: $black;
   position: fixed;
   bottom: 0;
   height: 80px;
   margin-top: 80px;
   width: 100%;
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid $gray;
 
   a {
-    color: #333333;
+    color: white;
     margin: 0 20px;
   }
 
   a:hover, a:active {
-    color: #555555;
+    color: $gray;
   }
 }
 
