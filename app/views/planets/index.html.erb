@@ -17,12 +17,14 @@
       <li class="index-card">
         <!-- image_tag "logo-red.png", alt: "planet-image", class: "card-img" %> -->
         <%= image_tag planet.image_url, alt: "planet-image", class: "card-img" %>
-        <h2><%= planet.name %></h2>
-        <div>
-          <%="⭐" * planet.rating %>
-          £ <%= planet.price %>
+        <div class="card-info">
+          <h2><%= planet.name %></h2>
+          <div class="justify-container">
+            <p><%="⭐" * planet.rating %></p>
+            <h4>£ <%= planet.price %></h4>
+          </div>
+          <p><%= planet.description %></p>
         </div>
-        <p><%= planet.description %></p>
       </li>
       <% end %>
 
