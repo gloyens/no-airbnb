@@ -24,12 +24,15 @@
 
 .button-primary-back {
   text-decoration: none;
-  color: black;
-  background-color:white;
-  font-size: 21px;
-  font-weight: 800px;
-  border-radius: 50px;
-  padding: 10px 15px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-style: bold;
+  width: 260px;
+
+  padding: 10px 20px;
+  background-color: $gray; //#212442;
+  border-radius: 4px;
 }
 
 .button-primary-back:active, .button-primary-back:hover {
