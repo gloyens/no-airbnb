@@ -1,7 +1,7 @@
 class PlanetsController < ApplicationController
 
   def index
-    @planets = Planet.all
+    @planets = Planet.all.order(created_at: :asc)
     if params[:query].present?
       @planets = Planet.search_by_name_and_description(params[:query])
     else
