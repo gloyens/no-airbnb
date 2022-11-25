@@ -23,7 +23,7 @@ user3 = User.create(
 
 
 # 10.times do
-#   planet = Planet.create!(
+#   planet = Planet.new(
 #     name: Faker::Space.star_cluster,
 #     description: Faker::Fantasy::Tolkien.poem,
 #     size: Faker::Space.distance_measurement,
@@ -38,7 +38,7 @@ user3 = User.create(
 
 # puts "Finished!"
 
-planet1 = Planet.create!(
+planet1 = Planet.new(
   name: "Solano",
   description: "The air on Solano has a rainbow swirl, as if bright inks were dropped into a current with precision. On the skin it felt as silk on a hot day, cool and smooth. It eddied around fingers as if it were water in some magic wishing well.",
   size: "36,184mi (58,232km) radius; 9x larger than Earth",
@@ -49,7 +49,11 @@ planet1 = Planet.create!(
   user: [user1, user2, user3].sample
 )
 
-planet3 = Planet.create!(
+file = URI.open(planet1.image_url)
+planet1.photo.attach(io:file, filename: "#{planet1.name}.#{planet1.image_url.split(".").last}", content_type: "image/#{planet1.image_url.split(".").last}")
+planet1.save!
+
+planet2 = Planet.new(
   name: "Wagonia",
   description: "This planet is where the Le Wagon coding bootcamp is located. It is a planet of 100% coding students. You can find the best developers in the Milky Way here.",
   size: "Kirkland Road, London, UK",
@@ -59,8 +63,11 @@ planet3 = Planet.create!(
   rating: 5,
   user: [user1, user2, user3].sample
 )
+file = URI.open(planet2.image_url)
+planet2.photo.attach(io:file, filename: "#{planet2.name}.#{planet2.image_url.split(".").last}", content_type: "image/#{planet2.image_url.split(".").last}")
+planet2.save!
 
-planet3 = Planet.create!(
+planet3 = Planet.new(
   name: "Gear World",
   description: "The planet of Gear World is covered in a metallic mechanical surface, suggesting that the whole planet might have been artificially created. Gear People primarily live in societies with others of their own kind, often in towns or cities.",
   size: "15,299mi (24,622km) radius",
@@ -71,7 +78,11 @@ planet3 = Planet.create!(
   user: [user1, user2, user3].sample
 )
 
-planet4 = Planet.create!(
+file = URI.open(planet3.image_url)
+planet3.photo.attach(io:file, filename: "#{planet3.name}.#{planet3.image_url.split(".").last}", content_type: "image/#{planet3.image_url.split(".").last}")
+planet3.save!
+
+planet4 = Planet.new(
   name: "Screaming Sun Earth  ",
   description: "The Screaming Sun Earth is one of 765 planets in the Milky Way that are at least 90 percent similar to Earth. Of those planets, it is one of three not under federal jurisdiction.",
   size: "15,299mi (24,622km) radius",
@@ -82,7 +93,11 @@ planet4 = Planet.create!(
   user: [user1, user2, user3].sample
 )
 
-planet5 = Planet.create!(
+file = URI.open(planet4.image_url)
+planet4.photo.attach(io:file, filename: "#{planet4.name}.#{planet4.image_url.split(".").last}", content_type: "image/#{planet4.image_url.split(".").last}")
+planet4.save!
+
+planet5 = Planet.new(
   name: "Alphabetrium",
   description: "Alphabetrium is a faraway realm inhabited by an ancient race who resemble giant letters of various alphabets. It's ruled by a council, which consists of Helium-Q, Magnesium-J, and Hydrogen-F.[",
   size: "8500mi (15,000km) radius",
@@ -93,7 +108,11 @@ planet5 = Planet.create!(
   user: [user1, user2, user3].sample
 )
 
-planet6 = Planet.create!(
+file = URI.open(planet5.image_url)
+planet5.photo.attach(io:file, filename: "#{planet5.name}.#{planet5.image_url.split(".").last}", content_type: "image/#{planet5.image_url.split(".").last}")
+planet5.save!
+
+planet6 = Planet.new(
   name: "Pluto",
   description: "Pluto is a dwarf planet located in Earth's solar system. inhabited by sentient Plutonians.",
   size: "1188.3 km radius",
@@ -104,7 +123,11 @@ planet6 = Planet.create!(
   user: [user1, user2, user3].sample
 )
 
-planet7 = Planet.create!(
+file = URI.open(planet6.image_url)
+planet6.photo.attach(io:file, filename: "#{planet6.name}.#{planet6.image_url.split(".").last}", content_type: "image/#{planet6.image_url.split(".").last}")
+planet6.save!
+
+planet7 = Planet.new(
   name: "Snake Planet",
   description: "Snake Planet is a planet in the Replacement dimension. It is inhabited by sapient Snakes, which were later reverted out of existence after the snakes started thoughtlessly meddling with time travel technology.",
   size: "HISS",
@@ -115,7 +138,11 @@ planet7 = Planet.create!(
   user: [user1, user2, user3].sample
 )
 
-planet8 = Planet.create!(
+file = URI.open(planet7.image_url)
+planet7.photo.attach(io:file, filename: "#{planet7.name}.#{planet7.image_url.split(".").last}", content_type: "image/#{planet7.image_url.split(".").last}")
+planet7.save!
+
+planet8 = Planet.new(
   name: "Network 9",
   description: "A planet where people get along. Come join a network state on this planet. Inspired by the work of Balaji Srinivasan.",
   size: "15,000mi (24,622km) radius",
@@ -126,7 +153,11 @@ planet8 = Planet.create!(
   user: [user1, user2, user3].sample
 )
 
-planet9 = Planet.create!(
+file = URI.open(planet8.image_url)
+planet8.photo.attach(io:file, filename: "#{planet8.name}.#{planet8.image_url.split(".").last}", content_type: "image/#{planet8.image_url.split(".").last}")
+planet8.save!
+
+planet9 = Planet.new(
   name: "Marconium",
   description: "The planet is home to Marco Ricci and his millions of descendants. The planet is a paradise, with a perfect climate, and a perfect ecosystem. The planet is also home to the most advanced technology in the galaxy.",
   size: "15,000mi (24,622km) radius",
@@ -137,7 +168,11 @@ planet9 = Planet.create!(
   user: [user1, user2, user3].sample
 )
 
-planet10 = Planet.create!(
+file = URI.open(planet9.image_url)
+planet9.photo.attach(io:file, filename: "#{planet9.name}.#{planet9.image_url.split(".").last}", content_type: "image/#{planet9.image_url.split(".").last}")
+planet9.save!
+
+planet10 = Planet.new(
   name: "Bitcoin Planet",
   description: "Gold was defeated by the state. It's too easily seized. Fiat thus triumphed over the course of the 20th century. But BTC is the v3, combining some of the advantages of both, while adding wholly new ones.",
   image_url: "https://openai-labs-public-images-prod.azureedge.net/user-GvMno2XpbjpoYyY8v1AyRjWT/generations/generation-QtNqyK2Ue7GGTn0s1TSn6T6g/image.webp",
@@ -147,7 +182,11 @@ planet10 = Planet.create!(
   user: [user1, user2, user3].sample
 )
 
-planet10 = Planet.create!(
+file = URI.open(planet10.image_url)
+planet10.photo.attach(io:file, filename: "#{planet10.name}.#{planet10.image_url.split(".").last}", content_type: "image/#{planet10.image_url.split(".").last}")
+planet10.save!
+
+planet11 = Planet.new(
   name: "Gaia",
   description: "Visit Gaia at your risk. Not much is known about this planet or its inhabitants. It is said that the planet is filled with giant shapeshifting creatures.",
   size: "15,299mi (24,622km) radius",
@@ -158,7 +197,11 @@ planet10 = Planet.create!(
   user: [user1, user2, user3].sample
 )
 
-planet11 = Planet.create!(
+file = URI.open(planet11.image_url)
+planet11.photo.attach(io:file, filename: "#{planet11.name}.#{planet11.image_url.split(".").last}", content_type: "image/#{planet11.image_url.split(".").last}")
+planet11.save!
+
+planet12 = Planet.new(
   name: "Your Planet Here",
   description: "Come list your planet with us!",
   size: "",
@@ -168,3 +211,7 @@ planet11 = Planet.create!(
   rating: 0,
   user: [user1, user2, user3].sample
 )
+
+file = URI.open(planet12.image_url)
+planet12.photo.attach(io:file, filename: "#{planet12.name}.#{planet12.image_url.split(".").last}", content_type: "image/#{planet12.image_url.split(".").last}")
+planet12.save!
