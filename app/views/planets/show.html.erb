@@ -5,7 +5,7 @@
         <i class="fa-solid fa-chevron-left button-round"></i>
       <% end %></div>
   </div>
-  <img src="<%= @planet.image_url %>", alt="planet-image", class="show-img">
+  <%= cl_image_tag @planet.photo.key, alt: "planet-image", class: "card-img" %>
 </div>
 
 <div class="info-container">
