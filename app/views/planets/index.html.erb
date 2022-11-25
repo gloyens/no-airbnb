@@ -18,7 +18,7 @@
       <%= link_to planet_path(planet) do %>
       <li class="index-card">
         <!-- image_tag "logo-red.png", alt: "planet-image", class: "card-img" %> -->
-        <%= image_tag planet.image_url, alt: "planet-image", class: "card-img" %>
+        <%= cl_image_tag planet.photo.key, alt: "planet-image", class: "card-img" %>
         <div class="card-info">
           <h2><%= planet.name %></h2>
           <div class="justify-container">

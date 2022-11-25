@@ -11,7 +11,7 @@
     <%= f.input :price %>
     <%= f.input :size %>
     <%= f.input :population %>
-    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+    <%= f.input :photo, as: :file %>
     <%= f.input :rating, collection: 1..5 %>
     <div class="form-actions btn-container">
       <%= f.button :submit, "Create Planet", class: "button-primary" %>
