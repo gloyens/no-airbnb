@@ -82,3 +82,5 @@ end
 gem "devise"
 
 gem 'pg_search'
+
+gem "dotenv-rails", groups: [:development, :test]
